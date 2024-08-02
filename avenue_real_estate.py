@@ -5,3 +5,5 @@ print(housing.head())
 print(housing.info())
 housing['chas'].value_counts()
 housing.describe()
+import matplotlib.pyplot as plt
+housing.hist(bins=50,figsize=(20,15))
