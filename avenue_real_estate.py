@@ -112,5 +112,5 @@ print_scores(rmse_scores)
 
 from joblib import dump, load
 dump(model,'AvenueRealEstates.joblib')
-print("Model dumped successfully.")
+
 
