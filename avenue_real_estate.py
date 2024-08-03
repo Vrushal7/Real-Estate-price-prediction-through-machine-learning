@@ -78,8 +78,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 #model=LinearRegression()
-model=DecisionTreeRegressor()
-#model=RandomForestRegressor()
+#model=DecisionTreeRegressor()
+model=RandomForestRegressor()
 model.fit(housing_num_tr,housing_labels)
 
 from joblib import dump,load
