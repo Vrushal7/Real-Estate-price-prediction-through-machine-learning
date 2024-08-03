@@ -28,3 +28,7 @@ def split_train_test(data,test_ratio):
 from sklearn.model_selection import train_test_split
 train_set,test_set=train_test_split(housing,test_size=0.2,random_state=42)
 print(f"Rows in train set:{len(train_set)}\nRows in test set:{len(test_set)}\n")
+
+from sklearn.model_selection import StratifiedShuffleSplit
+split=StratifiedShuffleSplit(housing,housing['chas'])
+for train_index,test_index in split.split()
