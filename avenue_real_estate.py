@@ -101,7 +101,7 @@ print(rmse)
 
 #Using cross validation
 from sklearn.model_selection import cross_val_score
-scores=cross_val_score(model,housing_num_tr,housing_labels,scores="neg_mean_squared_error",cv=10)
+scores=cross_val_score(model,housing_num_tr,housing_labels,scoring="neg_mean_squared_error",cv=10)
 rmse_scores=np.sqrt(-scores)
 print(rmse_scores)
 
