@@ -55,3 +55,13 @@ from sklearn.impute import SimpleImputer
 imputer=SimpleImputer(strategy="median")
 imputer.fit(housing)
 print(imputer.statistics_)
+X=imputer.transform(housing)
+housing_tr=pd.DataFrame(housing,columns=housing.columns)
+housing_tr.describe()
+
+#Creating pipeline
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+my_pipeline=Pipeline([
+    ('imputer',Imputer(strategy="median"))
+])
