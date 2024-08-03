@@ -82,8 +82,6 @@ from sklearn.ensemble import RandomForestRegressor
 model=RandomForestRegressor()
 model.fit(housing_num_tr,housing_labels)
 
-from joblib import dump,load
-dump(model,'AvenueRealEstates.joblib')
 
 some_data=housing.iloc[:5]
 some_labels=housing_labels.iloc[:5]
@@ -112,5 +110,7 @@ def print_scores(scores):
 
 print_scores(rmse_scores)
 
+from joblib import dump, load
+dump(model,'AvenueRealEstates.joblib')
 
 
