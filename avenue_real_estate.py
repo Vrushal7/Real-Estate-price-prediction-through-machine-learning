@@ -102,3 +102,9 @@ print(rmse_scores)
 
 def print_scores(scores):
     print("Scores:",scores)
+    print("Mean:",scores.mean())
+    print("Standard Deviation:",scores.std())
+
+print(rmse_scores)
+
+
