@@ -115,4 +115,5 @@ from joblib import dump, load
 dump(model,'AvenueRealEstates.joblib')
 
 #Testing the model on test data
-
+X_test=strat_test_set.drop("medv",axis=1)
+Y_test=strat_test_set["medv"].copy()
