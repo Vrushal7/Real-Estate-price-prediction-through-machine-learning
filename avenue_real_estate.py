@@ -89,3 +89,5 @@ from sklearn.metrics import mean_squared_error
 housing_predictions=model.predict(housing_num_tr)
 lin_mse=mean_squared_error(housing_labels,housing_predictions)
 lin_rmse=np.sqrt(lin_mse)
+print(lin_mse)
+print(lin_rmse)
