@@ -83,3 +83,9 @@ some_labels=housing_labels.iloc[:5]
 prepared_data=my_pipeline.transform(some_data)
 model.predict(prepared_data)
 list(some_labels)
+
+#Evaluate the model
+from sklearn.metrics import mean_squared_error
+housing_predictions=model.predict(housing_num_tr)
+lin_mse=mean_squared_error(housing_labels,housing_predictions)
+lin_rmse=np.sqrt(lin_mse)
