@@ -78,3 +78,5 @@ from sklearn.linear_model import LinearRegression
 model=LinearRegression()
 model.fit(housing_num_tr,housing_labels)
 
+some_data=housing.iloc[:5]
+some_labels=housing_labels.iloc[:5]
