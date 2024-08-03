@@ -80,3 +80,6 @@ model.fit(housing_num_tr,housing_labels)
 
 some_data=housing.iloc[:5]
 some_labels=housing_labels.iloc[:5]
+prepared_data=my_pipeline.transform(some_data)
+model.predict(prepared_data)
+list(some_labels)
