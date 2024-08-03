@@ -76,8 +76,10 @@ housing_num_tr.shape
 #Selecting a desired model for Avenue Real Estates
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
-model=DecisionTreeRegressor()
+from sklearn.ensemble import RandomForestRegressor
 #model=LinearRegression()
+#model=DecisionTreeRegressor()
+model=RandomForestRegressor()
 model.fit(housing_num_tr,housing_labels)
 
 some_data=housing.iloc[:5]
