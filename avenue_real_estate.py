@@ -21,3 +21,5 @@ def split_train_test(data,test_ratio):
 
 train_set,test_set=split_train_test(housing,0.2)
 print(f"Rows in train set:{len(train_set)}\nRows in test set:{len(test_set)}\n")
+
+from sklearn.model_selection import train_test_split
