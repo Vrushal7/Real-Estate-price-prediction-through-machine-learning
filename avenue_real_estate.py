@@ -110,7 +110,9 @@ def print_scores(scores):
 
 print_scores(rmse_scores)
 
+#Saving the model
 from joblib import dump, load
 dump(model,'AvenueRealEstates.joblib')
+
 
 
