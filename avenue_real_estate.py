@@ -76,7 +76,8 @@ housing_num_tr.shape
 #Selecting a desired model for Avenue Real Estates
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
-model=LinearRegression()
+model=DecisionTreeRegressor()
+#model=LinearRegression()
 model.fit(housing_num_tr,housing_labels)
 
 some_data=housing.iloc[:5]
@@ -88,7 +89,7 @@ list(some_labels)
 #Evaluate the model
 from sklearn.metrics import mean_squared_error
 housing_predictions=model.predict(housing_num_tr)
-lin_mse=mean_squared_error(housing_labels,housing_predictions)
-lin_rmse=np.sqrt(lin_mse)
-print(lin_mse)
-print(lin_rmse)
+mse=mean_squared_error(housing_labels,housing_predictions)
+rmse=np.sqrt(mse)
+print(mse)
+print(rmse)
