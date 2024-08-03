@@ -47,3 +47,5 @@ scatter_matrix(housing[attributes],figsize=(12,8))
 housing.plot(kind="scatter",x="rm",y="medv",alpha=0.8)
 
 #Attribute Combinations
+housing["taxrm"]=housing["tax"]/housing["rm"]
+print(housing.head())
