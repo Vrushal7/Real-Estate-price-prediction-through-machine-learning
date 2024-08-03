@@ -5,3 +5,5 @@ Standard Deviation: 0.7959183382086148
 (2) Decision Tree Regression
 Mean: 4.2003036346701075
 Standard Deviation: 0.7433731531806647
+
+(3)Linear Regression
