@@ -38,3 +38,5 @@ for train_index,test_index in split.split(housing,housing['chas']):
 strat_test_set['chas'].describe()
 
 #Looking for correlations
+corr_matrix=housing.corr()
+corr_matrix['medv'].sort_values(ascending=False)
