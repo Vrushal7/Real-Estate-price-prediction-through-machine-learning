@@ -122,3 +122,6 @@ final_predictions=model.predict(X_test_prepared)
 final_mse=mean_squared_error(Y_test,final_predictions)
 final_rmse=np.sqrt(final_mse)
 print(final_rmse)
+
+
+print("Prepared data:",prepared_data[0])
