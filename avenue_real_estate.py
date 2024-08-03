@@ -114,5 +114,5 @@ print_scores(rmse_scores)
 from joblib import dump, load
 dump(model,'AvenueRealEstates.joblib')
 
-
+#Testing the model on test data
 
