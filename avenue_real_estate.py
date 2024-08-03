@@ -101,4 +101,4 @@ rmse_scores=np.sqrt(-scores)
 print(rmse_scores)
 
 def print_scores(scores):
-    
+    print("Scores:",scores)
