@@ -30,5 +30,6 @@ train_set,test_set=train_test_split(housing,test_size=0.2,random_state=42)
 print(f"Rows in train set:{len(train_set)}\nRows in test set:{len(test_set)}\n")
 
 from sklearn.model_selection import StratifiedShuffleSplit
-split=StratifiedShuffleSplit(housing,housing['chas'])
-for train_index,test_index in split.split()
+split=StratifiedShuffleSplit(n_splits=1,test_size=0.2,random_state=42)
+for train_index,test_index in split.split(housing,housing['chas']):
+    strat_train_set= housing.loc[train_index]
