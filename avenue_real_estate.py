@@ -67,4 +67,8 @@ my_pipeline=Pipeline([
     ('std_scaler',StandardScaler()),
 ])
 #numpy array
-housing_num_tr=my_pipeline.fit_transform(housing_tr)
+housing_num_tr=my_pipeline.fit_transform(housing)
+housing_num_tr.shape
+
+#Selecting a desired model for Avenue Real Estates
+from sklearn.linear_model import LinearRegression
