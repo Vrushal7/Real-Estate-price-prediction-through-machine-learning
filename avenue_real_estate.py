@@ -49,3 +49,6 @@ housing.plot(kind="scatter",x="rm",y="medv",alpha=0.8)
 #Attribute Combinations
 housing["taxrm"]=housing["tax"]/housing["rm"]
 print(housing.head())
+housing.plot(kind="scatter",x="taxrm",y="medv",alpha=0.8)
+
+#Missing Attribute
