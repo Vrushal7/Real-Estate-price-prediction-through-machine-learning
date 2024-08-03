@@ -40,3 +40,5 @@ strat_test_set['chas'].describe()
 #Looking for correlations
 corr_matrix=housing.corr()
 corr_matrix['medv'].sort_values(ascending=False)
+
+#from pandas.plotting import scatter_matrix
