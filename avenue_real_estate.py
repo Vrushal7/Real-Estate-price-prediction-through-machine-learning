@@ -59,8 +59,8 @@ X=imputer.transform(housing)
 housing_tr=pd.DataFrame(housing,columns=housing.columns)
 housing_tr.describe()
 
-housing=strat_train_set("medv",axis=1)
-housing_labels=strat_train_set("medv",axis=1).copy()
+housing=strat_train_set.drop("medv",axis=1)
+housing_labels=strat_train_set("medv").copy()
 
 #Creating pipeline
 from sklearn.pipeline import Pipeline
