@@ -66,3 +66,5 @@ my_pipeline=Pipeline([
     ('imputer',SimpleImputer(strategy="median")),
     ('std_scaler',StandardScaler()),
 ])
+#numpy array
+housing_num_tr=my_pipeline.fit_transform(housing_tr)
