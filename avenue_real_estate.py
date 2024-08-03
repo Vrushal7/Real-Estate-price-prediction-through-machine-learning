@@ -19,6 +19,7 @@ def split_train_test(data,test_ratio):
     train_indices=shuffled[test_set_size:]
     return data.iloc[train_indices],data.iloc[test_indices]
 
+#for learning purpose
 #train_set,test_set=split_train_test(housing,0.2)
 #print(f"Rows in train set:{len(train_set)}\nRows in test set:{len(test_set)}\n")
 
