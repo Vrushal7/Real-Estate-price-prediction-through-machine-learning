@@ -121,5 +121,4 @@ X_test_prepared=my_pipeline.transform(X_test)
 final_predictions=model.predict(X_test_prepared)
 final_mse=mean_squared_error(Y_test,final_predictions)
 final_rmse=np.sqrt(final_mse)
-
 print(final_rmse)
