@@ -117,3 +117,7 @@ dump(model,'AvenueRealEstates.joblib')
 #Testing the model on test data
 X_test=strat_test_set.drop("medv",axis=1)
 Y_test=strat_test_set["medv"].copy()
+X_test_prepared=my_pipeline.transform(X_test)
+final_predictions=model.predict(X_test_prepared)
+final_mse=mean_squared_error(Y_test,final_predictions)
+final_rmse=np.sqrt(final_mse)
