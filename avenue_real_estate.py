@@ -51,6 +51,7 @@ housing["taxrm"]=housing["tax"]/housing["rm"]
 print(housing.head())
 housing.plot(kind="scatter",x="taxrm",y="medv",alpha=0.8)
 
-from sklearn.preprocessing import Imputer
-imputer=Imputer(strategy="median")
+from sklearn.impute import SimpleImputer
+imputer=SimpleImputer(strategy="median")
 imputer.fit(housing)
+print(imputer.statistics_)
