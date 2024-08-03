@@ -10,8 +10,8 @@ housing.hist(bins=50,figsize=(20,15))
 
 #Train test splitting
 import numpy as np
-np.random.seed(42)
 def split_train_test(data,test_ratio):
+    np.random.seed(42)
     shuffled=np.random.permutation(len(data))
     print(shuffled)
     test_set_size=int(len(data)*test_ratio)
