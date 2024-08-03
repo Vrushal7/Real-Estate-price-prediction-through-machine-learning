@@ -1,1 +1,2 @@
-import avenue_real_estate
+from joblib import dump, load
+model=load('AvenueRealEstates.joblib')
