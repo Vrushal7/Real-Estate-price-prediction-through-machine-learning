@@ -76,4 +76,5 @@ housing_num_tr.shape
 #Selecting a desired model for Avenue Real Estates
 from sklearn.linear_model import LinearRegression
 model=LinearRegression()
+model.fit(housing_num_tr,housing_labels)
 
